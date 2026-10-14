@@ -1,59 +1,47 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# OUSWEAR — E-commerce de mode masculine
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+OUSWEAR est une application e-commerce dédiée à la vente de vêtements et d'accessoires pour hommes.
 
-## About Laravel
+## Technologies
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- Laravel : API backend
+- PHP : logique serveur
+- MySQL / MariaDB : base de données
+- Laravel Sanctum : authentification API
+- FedaPay : intégration du paiement en ligne
+- Vue.js : interface frontend, hébergée dans un dépôt séparé
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Fonctionnalités
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Authentification des utilisateurs
+- Consultation des catégories et des produits
+- Gestion du panier
+- Gestion des adresses de livraison
+- Création et consultation des commandes
+- Paiement à la livraison et intégration FedaPay
+- Gestion des avis sur les produits
+- Gestion des variantes et des images des produits
 
-## Learning Laravel
+## Installation
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+1. Cloner le dépôt.
+2. Installer les dépendances PHP avec `composer install`.
+3. Copier `.env.example` vers `.env`.
+4. Configurer la base de données dans `.env`.
+5. Générer la clé de l'application avec `php artisan key:generate`.
+6. Exécuter les migrations avec `php artisan migrate`.
+7. Démarrer le serveur avec `php artisan serve`.
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Configuration
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+Configure les paramètres de connexion à la base de données et les identifiants FedaPay dans ton fichier `.env`.
 
-## Agentic Development
+Ne publie jamais ce fichier sur GitHub.
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+## Frontend
 
-```bash
-composer require laravel/boost --dev
+Le frontend Vue.js est géré dans un dépôt Git distinct.
 
-php artisan boost:install
-```
+## Statut
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# customer_project
+Projet en cours de développement.
